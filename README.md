@@ -3,6 +3,7 @@
 A Machine Learning project that predicts whether a loan application will be approved based on applicant details such as income, credit score, loan amount, savings, DTI ratio, employment status, and other financial information.
 
 ## Project Workflow
+
 - Load and preprocess the dataset
 - Handle missing values using SimpleImputer
 - Perform Exploratory Data Analysis (EDA)
@@ -12,9 +13,10 @@ A Machine Learning project that predicts whether a loan application will be appr
 - Compare model performance
 - Analyze feature importance
 - Save the best model using Joblib
-- Deploy using Streamlit
+- Develop a user-friendly Streamlit web application for real-time predictions
 
 ## Models Used
+
 - Logistic Regression
 - Decision Tree
 - Random Forest
@@ -23,8 +25,9 @@ A Machine Learning project that predicts whether a loan application will be appr
 - Support Vector Machine (SVM)
 
 ## Results
-| Model | Accuracy |
-|--------|----------|
+
+| **Model** | **Accuracy** |
+|-----------|-------------:|
 | Random Forest | **88.0%** |
 | Logistic Regression | 87.5% |
 | Decision Tree | 87.5% |
@@ -33,6 +36,7 @@ A Machine Learning project that predicts whether a loan application will be appr
 | KNN | 73.0% |
 
 ## Important Features
+
 - Credit Score
 - DTI Ratio
 - Applicant Income
@@ -40,14 +44,28 @@ A Machine Learning project that predicts whether a loan application will be appr
 - Savings
 - Collateral Value
 
-## Files
-```
-loan-approval-project/
-│── Loan_approval_model.ipynb
-│── loan_approval.csv
-│── random_forest_model.pkl
-│── scaler.pkl
-│── streamlit-UI/
-│── output/
-│── README.md
-```
+## Streamlit Web Application
+
+A user-friendly **Streamlit UI** was developed to allow users to enter applicant details and instantly predict whether a loan will be **Approved** or **Rejected**.
+
+### Features
+- Interactive input form
+- Real-time loan prediction
+- Approval probability score
+- Uses the trained Random Forest model
+- Responsive two-column interface
+- Simple and easy-to-use design
+
+
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Streamlit
+- Joblib
+
